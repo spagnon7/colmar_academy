@@ -9,14 +9,27 @@ html {
     color: #4A4A4A;
 }
 
+h1, h2 {
+    font-family: Tahoma, sans-serif;
+}
+
 h1 {
     font-weight: 900;
     font-size: 30px;
-    font-family: Tahoma, sans-serif;
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: 800;
 }
 
 h4 {
     font-size: 16px;
+}
+
+h5 {
+    font-size: 14px;
+    font-weight: normal;
 }
 
 /* Header Section  */
@@ -73,9 +86,11 @@ header li {
     display: flex;
 }
 
-.img-container {
+.banner .img-container {
     width: 60%;
     margin: 32px 24px;
+    max-height: 450px;
+    overflow: hidden;
 }
 
 .banner img {
@@ -134,4 +149,32 @@ button {
         display: block;
         margin: auto;
     }
+}
+
+/* Practicing Section  */
+
+.left-column {
+    width: 60%;
+    margin: 32px 24px;
+}
+
+.left-column .img-container {
+    overflow: hidden;
+}
+
+.left-column img {
+    width: 100%;
+}
+
+.left-column h2 {
+    margin-top: 32px;
+    margin-bottom: 24px;
+}
+
+.left-column h5 {
+    margin-bottom: 36px;
+}
+
+.quote-source {
+    font-size: 12px;
 }
