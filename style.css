@@ -22,7 +22,7 @@ header {
     color: black;
 }
 
-nav {
+.desktop-nav {
     display: flex;
     align-items: center;
     margin-right: 24px;
@@ -31,4 +31,20 @@ nav {
 header li {
     display: inline-block;
     margin: 0 8px;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+@media only screen and (max-width: 645px) {
+    .logo, .desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
 }
