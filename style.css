@@ -117,7 +117,7 @@ button {
     padding: 8px;
 }
 
-@media only screen and (max-width: 843px) {
+@media only screen and (max-width: 865px) {
     .banner {
         flex-wrap: wrap;
     }
@@ -153,9 +153,16 @@ button {
 
 /* Practicing Section  */
 
+/* left column  */
+
+.keep-practicing {
+    display: flex;
+}
+
 .left-column {
+    display: inline-block;
     width: 60%;
-    margin: 32px 24px;
+    padding: 32px 24px;
 }
 
 .left-column .img-container {
@@ -177,4 +184,65 @@ button {
 
 .quote-source {
     font-size: 12px;
+}
+
+/* right column  */
+
+.right-column {
+    width: 40%;
+    display: inline-block;
+}
+
+.right-column .img-container {
+    display: inline-block;
+    width: 35%;
+    overflow: hidden;
+    padding: 16px;
+}
+
+.right-column img {
+    width: 100%;
+    height: auto;
+}
+
+.right-column .info {
+    display: inline-flex;
+    width: 65%;
+    padding: 16px 0;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.right-column .info h4, .right-column .info h5, .right-column .info a {
+    width: 100%;
+    padding: 4px 0;
+}
+
+.orientation {
+    display: flex;
+    padding-top: 16px;
+}
+
+.right-column a {
+    font-size: 14px;
+}
+
+.campus, .guest {
+    display: flex;
+}
+
+/* .guest h4 {
+    line-height: 4;
+} */
+
+.guest {
+    background: #D8D8D8;
+}
+
+/* mobile  */
+
+@media only screen and (max-width: 865px) {
+    .left-column, .right-column {
+        display: none;
+    }
 }
