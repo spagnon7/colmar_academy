@@ -153,6 +153,10 @@ button {
 
 /* Practicing Section  */
 
+.practicing-mobile {
+    display: none;
+}
+
 /* left column  */
 
 .keep-practicing {
@@ -213,9 +217,13 @@ button {
     flex-wrap: wrap;
 }
 
-.right-column .info h4, .right-column .info h5, .right-column .info a {
+.right-column h4, .right-column h5, .right-column a {
     width: 100%;
     padding: 4px 0;
+}
+
+.right-column h5 {
+    line-height: 1.5;
 }
 
 .orientation {
@@ -223,7 +231,7 @@ button {
     padding-top: 16px;
 }
 
-.right-column a {
+.keep-practicing a {
     font-size: 14px;
 }
 
@@ -241,8 +249,50 @@ button {
 
 /* mobile  */
 
-@media only screen and (max-width: 865px) {
+@media only screen and (max-width: 700px) {
     .left-column, .right-column {
         display: none;
+    }
+
+    .practicing-mobile {
+        display: block;
+        margin: 16px 16px 32px 16px;
+        width: 100%;
+    }
+
+    .orientation, .campus, .guest {
+        display: block;
+    }
+  
+    .practicing-mobile .img-container {
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        padding: 16px;
+    }
+
+    .practicing-mobile img {
+        width: 100%;
+    }
+
+    .practicing-mobile .info {
+        display: block;
+        width: 100%;
+        padding: 0 0 44px 32px;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+      
+    .practicing-mobile h4, .practicing-mobile h5, .practicing-mobile a {
+        width: 100%;
+        margin: 6px 0;
+    }
+
+    .practicing-mobile h5 {
+        line-height: 1.5;
+    }
+
+    .guest {
+        background: none;
     }
 }
