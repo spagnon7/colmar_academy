@@ -296,3 +296,56 @@ button {
         background: none;
     }
 }
+
+/* Start Learning Section  */
+
+.start-learning {
+    background: #D8D8D8;
+}
+
+.start-learning h2 {
+    text-align: center;
+    padding: 32px 0;
+}
+
+.start-learning .row1 {
+    display: flex;
+    margin: 0 62px 20px 62px;
+}
+
+.box {
+    width: 33.33%;
+    margin: 0 10px;
+    background: white;
+}
+
+.box .img-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+}
+
+.box .info {
+    margin: 16px 0 16px 16px;
+}
+
+.box h4, .box h5 {
+    padding: 8px 0;
+}
+
+.box .courses {
+    text-transform: uppercase;
+}
+
+.box .wrapper {
+    line-height: 1.5;
+}
+
+.start-learning .row2 {
+    display: flex;
+    padding: 0 62px 32px 62px;
+}
