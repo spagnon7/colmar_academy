@@ -256,7 +256,7 @@ button {
 
     .practicing-mobile {
         display: block;
-        margin: 16px 16px 32px 16px;
+        margin: 16px 16px 0px 16px;
         width: 100%;
     }
 
@@ -334,7 +334,7 @@ button {
 }
 
 .box h4, .box h5 {
-    padding: 8px 0;
+    padding: 8px 8px 0 0;
 }
 
 .box .courses {
@@ -348,4 +348,37 @@ button {
 .start-learning .row2 {
     display: flex;
     padding: 0 62px 32px 62px;
+}
+
+.courses-mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 665px) {
+    .start-learning {
+        background: white;
+        border-top: 0.5px solid #D8D8D8;
+    }
+
+    .start-learning h2 {
+        padding: 32px 0 12px 0;
+    }
+
+    .start-learning .row1, .start-learning .row2 {
+        display: none;
+    }
+
+    .courses-mobile {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .courses-mobile h4 {
+        background: #D8D8D8;
+        width: 90%;
+        margin: 6px 0;
+        padding: 20px 0 20px 16px;
+    }
+
 }
