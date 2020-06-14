@@ -87,6 +87,7 @@ header li {
 .banner {
     background: #D8D8D8;
     display: flex;
+    padding-top: 64px;
 }
 
 .banner .img-container {
